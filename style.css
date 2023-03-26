@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+:root {
+    --pink: #CE9898;
+    --black: #423A3A;
+    --btn-bg: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    --btn-hov: rgba(255, 255, 255, 0.5);
+    --border: #CE9898;
+    --border-hover: #F96464;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+[alt="hero-img"] {
+    width: 100%;
+}
+
+.hero-desktop,
+.logo-desktop {
+    display: none;
+}
+
+.main {
+    padding: 64px 32px 92px;
+}
+
+.logo-mob {
+    margin: 32px;
+    width: 100px;
+    height: 20.89px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 10.8254px;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+}
+
+h1 span {
+    font-weight: 300;
+    color: var(--pink);
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--pink);
+    padding: 16px 0 32px;
+}
+
+#email {
+    border: 1px solid rgba(206, 152, 152, 0.5);
+    border-radius: 28px;
+    width: 311px;
+    height: 48px;
+    padding-left: 24px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #423A3A;
+
+    position: relative;
+}
+
+::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: rgba(206, 152, 152, 0.5);
+}
+
+#email:focus {
+    border: 2px solid #F96464;
+    outline: none;
+}
+
+button {
+    background: var(--btn-bg);
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    border-radius: 28px;
+    padding: 12px 26px;
+    transform: translate(247px, -47.5px);
+}
+
+@media (min-width:768px) {
+    .logo-mob {
+        display: none;
+    }
+
+    .logo-desktop {
+        display: block;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .main {
+        padding: 64px 43px 0;
+        width: 50%;
+    }
+
+    h1 {
+        margin-top: 24px;
+        text-align: start;
+    }
+
+    p {
+        text-align: start;
+    }
+
+    button {
+        transform: translate(-70px, 3.5px);
+    }
+}
+
+@media (min-width:1024px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    .hero-mob {
+        display: none;
+    }
+
+    .bighero {
+        width: 50%;
+        height: 100vh;
+        background: url(images/hero-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    section {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    h1 {
+        margin-top: 90px;
+    }
+}
+
+
+@media (min-width:1300px) {
+    body {
+        background: linear-gradient(221.42deg, #FFF1F1 2.6%, #FFFFFF 96.36%);
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .main {
+        padding: 70px 220px 152px 165px;
+    }
+
+    h1 {
+        font-size: 64px;
+        line-height: 71px;
+        letter-spacing: 17.3206px;
+    }
+
+    h1 span {
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: 17.3206px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    #email {
+        width: 445px;
+        height: 56px;
+    }
+
+    button {
+        padding: 17px 43px;
+    }
+}
